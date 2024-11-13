@@ -35,6 +35,13 @@
                      Vấn Đáp Tông Môn
                  </h2>
              </div>
+          <div class="tg-point">
+         <label for="numberInput">Máy tính tu vi:</label>
+    <input type="number" id="numberInput" placeholder="Nhập tu vi của bạn" />
+    <br>
+    <button onclick="showNumber()">Kiểm tra tu vi</button>
+    <div id="message" class="message"></div>
+    </div>
              <div class="tg-sect-search mb-4">
                  <label for="keyword-search">Tìm kiếm:</label>
                  <input type="text" id="searchInput" class="form-control mb-3" placeholder="Nhập từ khóa để tìm...">
@@ -53,6 +60,18 @@
                  </table>
              </div>
              <script>
+               function showNumber() {
+      const number = document.getElementById('numberInput').value;
+      const messageElement = document.getElementById('message');
+
+      if (number === '') {
+        messageElement.textContent = 'Thiên phú quá kém!';
+        messageElement.style.color = '#e74c3c';  
+      } else {
+        messageElement.textContent = 'Tu vi của bạn nhập là: ' + number;
+        messageElement.style.color = '#2ecc71';  
+      }
+    }
                  let originalData = [];
                  fetch('assets/data.json')
                      .then(response => response.json())
