@@ -1,12 +1,12 @@
  @font-face{font-family:'DFVN Goatskin Brush';src:url('DFVNGoatskinBrush-Regular.woff2') format('woff2'),url('DFVNGoatskinBrush-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap;}
 
 body{background-color:#f4f4f9;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-size:15px;color:#000;margin:0;padding:0;width:100%;overflow-x:hidden;-moz-user-select: none !important;
-    -webkit-touch-callout: none !important;
-    -webkit-user-select: none !important;
-    -khtml-user-select: none !important;
-    -moz-user-select: none !important;
-    -ms-user-select: none !important;
-    user-select: none !important;}
+    -webkit-touch-callout: none ;
+    -webkit-user-select: none ;
+    -khtml-user-select: none ;
+    -moz-user-select: none;
+    -ms-user-select: none ;
+    user-select: none;}
 body::-webkit-scrollbar{width:5px;}
 body::-webkit-scrollbar-track{background:#ccc;}
 body::-webkit-scrollbar-thumb{background:#3a7dc1;}
