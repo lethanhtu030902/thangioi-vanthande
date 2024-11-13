@@ -57,29 +57,6 @@ PeShiner = function () {
     });
      
 };
-const express = require('express');
-const http = require('http');
-const socketIo = require('socket.io');
-
-const app = express();
-const server = http.createServer(app);
-const io = socketIo(server);
-
-let onlineUsers = 0;
-
-io.on('connection', (socket) => {
-  onlineUsers++;
-  io.emit('userCount', onlineUsers); // Gửi dữ liệu đến tất cả client
-
-  socket.on('disconnect', () => {
-    onlineUsers--;
-    io.emit('userCount', onlineUsers);
-  });
-});
-
-server.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
  $(document).ready(function() {
     $(document).on('contextmenu', function(e) {
         e.preventDefault();
