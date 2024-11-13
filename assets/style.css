@@ -18,11 +18,14 @@ tbody{font-size:15px;font-weight:normal;}
 .th-answer{width:25%;}
 .text-light{color:#fff}
 .table{border:solid 1px #ccc !important;}
-label{font-size:18px;margin-right:10px;}
-input{padding:10px;font-size:16px;width:100%;margin-bottom:15px;}
-button{padding:10px 20px;background-color:#4CAF50;color:white;border:none;border-radius:5px;cursor:pointer;font-size:16px;width:100%;}
-button:hover{background-color:#45a049;}
-.message{margin-top:15px;font-size:16px;font-weight:bold;color:#e74c3c;}
+.tg-point .form-label{font-size:1.2rem;font-weight:bold;margin-bottom:10px;display:block;}
+.tg-point .form-control{width:100%;padding:10px;font-size:1rem;border:1px solid #ccc;border-radius:5px;box-sizing:border-box;margin-bottom:15px;transition:border-color 0.3s ease;}
+.tg-point .form-control:focus{border-color:#007bff;outline:none;}
+.tg-point .btn{width:100%;padding:12px;font-size:1.2rem;background-color:#007bff;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3s ease;}
+.tg-point .btn:hover{background-color:#0056b3;}
+.message{margin-top:15px;font-size:1.2rem;}
+.message.error{color:#e74c3c;}
+.message.success{color:#2ecc71;}
 .scrollToTop{position:fixed;bottom:65px;right:35px;height:50px;width:50px;cursor:pointer;display:block;border-radius:50px;z-index:1001010;opacity:0;visibility:hidden;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:all 400ms linear;-o-transition:all 400ms linear;transition:all 400ms linear}
 .scrollToTop.active-progress{opacity:1;visibility:visible;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
 .scrollToTop::before{position:absolute;font-family:"Font Awesome 6 Pro";content:"\f102";text-align:center;line-height:50px;font-size:20px;color:#3a7dc1;left:0;top:0;height:50px;width:50px;cursor:pointer;display:block;z-index:1;-webkit-transition:all 400ms linear;-o-transition:all 400ms linear;transition:all 400ms linear}
