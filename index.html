@@ -38,7 +38,7 @@
             <div>Online Users: <span id="userCount">0</span></div>
 
   <script>
-    const socket = io('http://localhost:3000');
+    const socket = io('https://lethanhtu030902.github.io/thangioi-vanthande');
     socket.on('userCount', (count) => {
       document.getElementById('userCount').textContent = count;
     });
