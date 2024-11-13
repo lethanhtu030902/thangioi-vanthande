@@ -36,13 +36,7 @@
                 </h2>
                   <a type="button" class="btn btn-success" href="https://hoathinh3d.mobi/profile/83911" target="_blank">Vào Tông Môn</a>
             </div>
-            <div class="tg-point">
-                <label for="numberInput">Pháp bảo kiểm tra tu vi:</label>
-                <input type="number" id="numberInput" placeholder="Nhập tu vi của bạn" />
-                <br>
-                <button onclick="showNumber()">Kiểm tra tu vi</button>
-                <div id="message" class="message"></div>
-            </div>
+         
 
             <div class="tg-sect-search mb-4">
                 <label for="keyword-search">Tìm kiếm:</label>
@@ -63,22 +57,33 @@
                 </table>
             </div>
             <script>
-                function validateInput() {
+               function validateInput() {
                     const numberInput = document.getElementById('numberInput');
                     const messageElement = document.getElementById('message');
-                    const number = parseFloat(numberInput.value); 
-                    if (isNaN(number) || number <= 0) {
-                        messageElement.textContent = 'Vui lòng nhập tu vi lớn hơn 0!';
-                        messageElement.style.color = '#e74c3c';
+                    const number = parseFloat(numberInput.value);
                 
+                    if (isNaN(number) || number <= 0) {
+                        // Xóa nội dung ô input sau 1 giây
                         setTimeout(() => {
                             numberInput.value = '';
-                        }, 500);
-                    } else {
-                        messageElement.textContent = 'Xin chúc mừng tu vi của bạn là: ' + number;
-                        messageElement.style.color = '#2ecc71';
+                        }, 1000);
                     }
                 }
+                
+                function showNumber() {
+                    const numberInput = document.getElementById('numberInput');
+                    const messageElement = document.getElementById('message');
+                    const number = parseFloat(numberInput.value);
+                
+                    if (!isNaN(number) && number > 0) {
+                        messageElement.textContent = 'Xin chúc mừng tu vi của bạn là: ' + number;
+                        messageElement.style.color = '#2ecc71';
+                    } else {
+                        messageElement.textContent = 'Vui lòng nhập tu vi hợp lệ!';
+                        messageElement.style.color = '#e74c3c';
+                    }
+                }
+
                 
                 document.getElementById('numberInput').addEventListener('input', validateInput);
                 let originalData = [];
