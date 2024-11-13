@@ -1,3 +1,4 @@
+
 @font-face{font-family:'DFVN Goatskin Brush';src:url('DFVNGoatskinBrush-Regular.woff2') format('woff2'),url('DFVNGoatskinBrush-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap;}
 body{background-color:#f4f4f9;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-size:15px;color:#000;margin:0;padding:0;width:100%;overflow-x:hidden;-moz-user-select:none !important;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 body::-webkit-scrollbar{width:5px;}
@@ -10,14 +11,14 @@ tbody{font-size:15px;font-weight:normal;}
 .tg-sect-name{font-size:70px;font-family:"DFVN Goatskin Brush";color:#3a7dc1;text-transform:capitalize;line-height:1;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;box-sizing:border-box;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;margin-bottom:5px;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/pages/assets/image/tong-mon-title.gif);background-size:auto;color:transparent;-webkit-background-clip:text;background-position:center;font-weight:800;text-align:center;}
 .tg-sect-slogan{font-size:50px;font-family:"DFVN Goatskin Brush";color:#3a7dc1;text-transform:capitalize;line-height:1;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;box-sizing:border-box;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;margin-bottom:5px;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/assets/image/gif/vu_tru_chi_chu_2024.gif);background-size:auto;color:transparent;-webkit-background-clip:text;background-position:center;font-weight:800;text-align:center;}
 .vtd-name{font-size:30px;font-family:"DFVN Goatskin Brush";text-transform:capitalize;line-height:1;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/assets/image/gif/dau_thanh_2024.gif);background-size:auto;color:transparent;-webkit-background-clip:text;background-position:center;}
-.btn-vtd{background-position:center;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/pages/assets/image/tong-mon-title.gif);background-size:auto;width:160px; padding:12px;font-size:1.2rem;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3s ease;margin: auto; text-decoration: unset !important;}
-.btn-tg-point{background-position:center;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/assets/image/gif/vu_tru_chi_chu_2024.gif);background-size:auto;width:160px; padding:12px;font-size:1.2rem;text-transform:capitalize;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3s ease;}
+.btn-vtd{font-weight:bold;background-position:center;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/pages/assets/image/tong-mon-title.gif);background-size:auto;width:180px;padding:12px;font-size:1.2rem;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3s ease;margin:auto;text-decoration:unset !important;}
+.btn-tg-point{font-weight:bold;background-position:center;background:url(https://hoathinh3d.mobi/wp-content/themes/halimmovies-child/assets/image/gif/hon_dau_la_052024.gif);background-size:auto;width:180px;padding:12px;font-size:1.2rem;text-transform:capitalize;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3s ease;}
 .tg-question-and-answer-empty{color:red;font-size:16px;font-weight:bold;}
 .wrap-content{margin:auto;max-width:1200px;padding-left:15px;padding-right:15px;}
 .th-numb{width:5%;}
 .th-question{width:70%;}
 .th-answer{width:25%;}
-.text-light{color:#fff}
+.text-light{color:#fff !important;}
 .table{border:solid 1px #ccc !important;}
 .tg-point .form-label{font-size:1.2rem;font-weight:bold;margin-bottom:10px;display:block;}
 .tg-point .form-control{width:100%;padding:10px;font-size:1rem;border:1px solid #ccc;border-radius:5px;box-sizing:border-box;margin-bottom:15px;transition:border-color 0.3s ease;}
