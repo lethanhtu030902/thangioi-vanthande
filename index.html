@@ -19,6 +19,7 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/jquery.pixelentity.shiner.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <script src="assets/main.js"></script>
 </head>
 
@@ -34,6 +35,14 @@
                     Vấn Đáp Tông Môn
                 </h2>
             </div>
+            <div>Online Users: <span id="userCount">0</span></div>
+
+  <script>
+    const socket = io('http://localhost:3000');
+    socket.on('userCount', (count) => {
+      document.getElementById('userCount').textContent = count;
+    });
+  </script>
             <div class="tg-sect-search mb-4">
                 <label for="keyword-search">Tìm kiếm:</label>
                 <input type="text" id="searchInput" class="form-control mb-3" placeholder="Nhập từ khóa để tìm...">
