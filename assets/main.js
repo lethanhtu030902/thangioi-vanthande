@@ -58,17 +58,18 @@ PeShiner = function () {
      
 };
  $(document).ready(function() {
-        $(document).on('contextmenu', function(e) {
-            e.preventDefault();
-        });
-
-        $(document).on('keydown', function(e) {
-
-            if (e.key === 'F12' || e.keyCode === 123) {
-                e.preventDefault();
-            }
-        });
+    $(document).on('contextmenu', function(e) {
+        e.preventDefault();
     });
+    $(document).on('keydown', function(e) {
+                if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+        }       
+        if (e.ctrlKey && (e.key === 'U' || e.keyCode === 85)) {
+            e.preventDefault();
+        }
+    });
+});
 /* Ready */
 $(document).ready(function () {
     PeShiner();
