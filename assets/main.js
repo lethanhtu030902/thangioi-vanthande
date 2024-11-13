@@ -69,6 +69,33 @@ PeShiner = function () {
 	});
 
 };
+$(document).ready(function() {
+    $('#numberInput').on('input', function() {
+        const numberInput = $(this);
+        const number = parseFloat(numberInput.val());
+
+        if (isNaN(number) || number <= 0) {
+            // Xóa nội dung ô input sau 1 giây
+            setTimeout(() => {
+                numberInput.val('');
+            }, 1000);
+        }
+    });
+
+    $('#showNumberButton').on('click', function() {
+        const numberInput = $('#numberInput');
+        const messageElement = $('#message');
+        const number = parseFloat(numberInput.val());
+
+        if (!isNaN(number) && number > 0) {
+            messageElement.text('Xin chúc mừng tu vi của bạn là: ' + number);
+            messageElement.css('color', '#2ecc71');
+        } else {
+            messageElement.text('Vui lòng nhập tu vi hợp lệ!');
+            messageElement.css('color', '#e74c3c');
+        }
+    });
+});
 $(document).ready(function () {
 	PeShiner();
 });
