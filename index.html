@@ -24,33 +24,36 @@
 </head>
 
 <body>
-    <div class="wrap-tg-sect-zone py-5 bg-light">
+   <div class="wrap-tg-sect-zone py-5 bg-light">
         <div class="wrap-content container">
-            <div class="tg-title text-center mb-4">
-                <a class="tg-logo peShiner">
-                    <img src="assets/thangioi-logo.png" alt="Thần Giới">
-                </a>
-                <h1 class="tg-sect-name my-3">Thần Giới</h1>                
-                <h2 class="tg-sect-slogan h5 mb-3">Vấn Đáp Tông Môn</h2>
-                <div class="vtd-atv text-center mb-3">
-                    <img src="https://hoathinh3d.mobi/wp-content/uploads/ultimatemember/83911/profile_photo.jpg?1731510714"
-                        class="gravatar avatar avatar-150 um-avatar um-avatar-uploaded rounded-circle" width="150"
-                        height="150" alt="Vân Thần Đế"
-                        data-default="https://hoathinh3d.mobi/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg"
-                        loading="lazy">
+            <div class="tg-title text-center mb-4 row g-3">
+                <div class="tg-title-left col-6">
+                    <a class="tg-logo peShiner">
+                        <img src="assets/thangioi-logo.png" alt="Thần Giới">
+                    </a>
+                    <h1 class="tg-sect-name my-3">Thần Giới</h1>
+                    <h2 class="tg-sect-slogan h5">Vấn Đáp Tông Môn</h2>
                 </div>
-                <div class="mb-3">
-                    <span class="vtd-name">
-                        Vân Thần Đế
-                    </span>
-                    <span>
-                        👑
-                    </span>
+                <div class="tg-title-right col-6">
+                    <div class="vtd-atv text-center mb-3">
+                        <img src="https://hoathinh3d.mobi/wp-content/uploads/ultimatemember/83911/profile_photo.jpg?1731510714"
+                            class="gravatar avatar avatar-150 um-avatar um-avatar-uploaded rounded-circle" width="150"
+                            height="150" alt="Vân Thần Đế"
+                            data-default="https://hoathinh3d.mobi/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg"
+                            loading="lazy">
+                    </div>
+                    <div class="mb-3">
+                        <span class="vtd-name">
+                            Vân Thần Đế
+                        </span>
+                        <span>
+                            👑
+                        </span>
+                    </div>
+                    <a type="button" class="btn btn-success" href="https://hoathinh3d.mobi/profile/83911" target="_blank">
+                        Liên Hệ Tông Chủ
+                    </a>
                 </div>
-                <a type="button" class="btn btn-success" href="https://hoathinh3d.mobi/profile/83911"
-                    target="_blank">
-                    Liên Hệ Tông Chủ
-                </a>
             </div>
             <div class="tg-point container mt-4">
                 <div class="mb-3">
@@ -63,10 +66,9 @@
             <div class="container mt-5">
                 <div class="tg-sect-search mb-4">
                     <label for="searchInput" class="form-label fw-bold">Tìm kiếm:</label>
-                    <input type="text" id="searchInput" class="form-control mb-3"
-                        placeholder="Nhập từ khóa để tìm...">
+                    <input type="text" id="searchInput" class="form-control mb-3" placeholder="Nhập từ khóa để tìm...">
                 </div>
-
+    
                 <div class="tg-question-and-answer mb-4">
                     <table class="table table-striped table-hover">
                         <thead class="thead-light">
@@ -88,7 +90,7 @@
                             displayData(originalData);
                         })
                         .catch(error => console.error('Lỗi khi lấy dữ liệu:', error));
-
+    
                     function displayData(data) {
                         const qaList = document.getElementById('qa-list');
                         qaList.innerHTML = '';
