@@ -85,7 +85,7 @@ PeShiner = function () {
         const messageElement = $('#message');
         const number = parseFloat(numberInput.val());
         if (!isNaN(number) && number > 0) {
-            messageElement.text('Xin chúc mừng tu vi của bạn là :) : ' + number);
+            messageElement.text('Xin chúc mừng tu vi của bạn là: ' + number);
         } else {
             messageElement.text('Vui lòng nhập tu vi hợp lệ!');
         }
