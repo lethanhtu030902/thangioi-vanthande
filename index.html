@@ -57,36 +57,7 @@
                 </table>
             </div>
             <script>
-               function validateInput() {
-                    const numberInput = document.getElementById('numberInput');
-                    const messageElement = document.getElementById('message');
-                    const number = parseFloat(numberInput.value);
-                
-                    if (isNaN(number) || number <= 0) {
-                        // Xóa nội dung ô input sau 1 giây
-                        setTimeout(() => {
-                            numberInput.value = '';
-                        }, 1000);
-                    }
-                }
-                
-                function showNumber() {
-                    const numberInput = document.getElementById('numberInput');
-                    const messageElement = document.getElementById('message');
-                    const number = parseFloat(numberInput.value);
-                
-                    if (!isNaN(number) && number > 0) {
-                        messageElement.textContent = 'Xin chúc mừng tu vi của bạn là: ' + number;
-                        messageElement.style.color = '#2ecc71';
-                    } else {
-                        messageElement.textContent = 'Vui lòng nhập tu vi hợp lệ!';
-                        messageElement.style.color = '#e74c3c';
-                    }
-                }
-
-                
-                document.getElementById('numberInput').addEventListener('input', validateInput);
-                let originalData = [];
+            let originalData = [];
                 fetch('assets/data.json')
                     .then(response => response.json())
                     .then(data => {
