@@ -35,7 +35,6 @@
                      Vấn Đáp Tông Môn
                  </h2>
              </div>
-
              <div class="tg-sect-search mb-4">
                  <label for="keyword-search">Tìm kiếm:</label>
                  <input type="text" id="searchInput" class="form-control mb-3" placeholder="Nhập từ khóa để tìm...">
@@ -69,10 +68,10 @@
                      data.forEach((item, index) => {
                          const row = document.createElement('tr');
                          row.innerHTML = `
-                        <th scope="row" class="th-numb text-center">${index + 1}</th>
-                        <td class="th-question">${item.question}</td>
-                        <td class="th-answer">${item.answer}</td>
-                      `;
+                     <th scope="row" class="th-numb text-center">${index + 1}</th>
+                     <td class="th-question">${item.question}</td>
+                     <td class="th-answer">${item.answer}</td>
+                   `;
                          qaList.appendChild(row);
                      });
                  }
@@ -84,6 +83,7 @@
                      displayData(filteredData);
                  });
              </script>
+
              <h3 class="copyright text-center">
                  Copyright Thần Giới. Created by Vân Thần Đế
              </h3>
