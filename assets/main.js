@@ -32,27 +32,7 @@ $(document).ready(function () {
         return false;
     });
 });
-$(document).ready(function() {
-    const searchInput = $('#searchInput');
-    searchInput.on('focus', function() {
-        searchInput.css({
-            '-webkit-user-select': 'text',
-            '-khtml-user-select': 'text',
-            '-moz-user-select': 'text',
-            '-ms-user-select': 'text',
-            'user-select': 'text'
-        });
-    });
-    searchInput.on('blur', function() {
-        searchInput.css({
-            '-webkit-user-select': 'none',
-            '-khtml-user-select': 'none',
-            '-moz-user-select': 'none',
-            '-ms-user-select': 'none',
-            'user-select': 'none'
-        });
-    });
-});
+
  function showNotify(text = 'Notify text', title = 'Thông báo', status = 'success') {
     new Notify({
         status: status,
