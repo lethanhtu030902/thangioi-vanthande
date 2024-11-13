@@ -52,38 +52,6 @@
                     </tbody>
                 </table>
             </div>
-            <script>
-                let originalData = [];
-                fetch('assets/data.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        originalData = data;
-                        displayData(originalData);
-                    })
-                    .catch(error => console.error('Lỗi khi lấy dữ liệu:', error));
-
-                function displayData(data) {
-                    const qaList = document.getElementById('qa-list');
-                    qaList.innerHTML = '';
-                    data.forEach((item, index) => {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                    <th scope="row" class="th-numb text-center">${index + 1}</th>
-                    <td class="th-question">${item.question}</td>
-                    <td class="th-answer">${item.answer}</td>
-                  `;
-                        qaList.appendChild(row);
-                    });
-                }
-                document.getElementById('searchInput').addEventListener('input', function() {
-                    const keyword = this.value.toLowerCase();
-                    const filteredData = originalData.filter(item =>
-                        item.question.toLowerCase().includes(keyword) || item.answer.toLowerCase().includes(keyword)
-                    );
-                    displayData(filteredData);
-                });
-            </script>
-
             <h3 class="copyright text-center">
                 Copyright Thần Giới. Created by Vân Thần Đế
             </h3>
