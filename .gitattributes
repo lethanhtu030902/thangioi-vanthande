@@ -1,0 +1,5 @@
+index.html -diff -merge -text
+data.json -diff -merge -text
+jquery.pixelentity.shiner.min.js -diff -merge -text
+main.js -diff -merge -text
+style.css -diff -merge -text
