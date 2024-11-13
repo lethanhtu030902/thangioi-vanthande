@@ -68,8 +68,7 @@ PeShiner = function () {
 		});
 	});
 
-};
-$(document).ready(function() {
+};$(document).ready(function() {
     $('#numberInput').on('input', function() {
         const numberInput = $(this);
         const number = parseFloat(numberInput.val());
