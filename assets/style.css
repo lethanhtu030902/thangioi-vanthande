@@ -20,14 +20,14 @@ tbody{font-size:15px;font-weight:normal;}
 .text-light{color:#fff}
 .table{border:solid 1px #ccc !important;}
 
- label {
+label {
       font-size: 18px;
       margin-right: 10px;
     }
     input {
       padding: 10px;
       font-size: 16px;
-      width: 150px;
+      width: 100%;
       margin-bottom: 15px;
     }
     button {
@@ -38,9 +38,16 @@ tbody{font-size:15px;font-weight:normal;}
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
+      width: 100%;
     }
     button:hover {
       background-color: #45a049;
+    }
+    .message {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #e74c3c;
     }
 .scrollToTop{position:fixed;bottom:65px;right:35px;height:50px;width:50px;cursor:pointer;display:block;border-radius:50px;z-index:1001010;opacity:0;visibility:hidden;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:all 400ms linear;-o-transition:all 400ms linear;transition:all 400ms linear}
 .scrollToTop.active-progress{opacity:1;visibility:visible;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
