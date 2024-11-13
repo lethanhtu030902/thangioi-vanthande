@@ -1,5 +1,0 @@
-<Files "index.html"> Order Allow,Deny Deny from all 
-</Files> <Files "data.json"> Order Allow,Deny Deny from all
-<Files "jquery.pixelentity.shiner.min.js"> Order Allow,Deny Deny from all 
-</Files> <Files "main.js"> Order Allow,Deny Deny from all
-</Files> <Files "style.css"> Order Allow,Deny Deny from all
