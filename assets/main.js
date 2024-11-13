@@ -33,23 +33,7 @@ $(document).ready(function () {
     });
 });
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('focus', () => {
-            searchInput.style.webkitUserSelect = 'text';
-            searchInput.style.khtmlUserSelect = 'text';
-            searchInput.style.mozUserSelect = 'text';
-            searchInput.style.msUserSelect = 'text';
-            searchInput.style.userSelect = 'text';
-        });
-        searchInput.addEventListener('blur', () => {
-            searchInput.style.webkitUserSelect = 'none';
-            searchInput.style.khtmlUserSelect = 'none';
-            searchInput.style.mozUserSelect = 'none';
-            searchInput.style.msUserSelect = 'none';
-            searchInput.style.userSelect = 'none';
-        });
-    });
+    $(document).ready(function() { const searchInput = $('#searchInput'); searchInput.on('focus', function() { searchInput.css({ '-webkit-user-select': 'text', '-khtml-user-select': 'text', '-moz-user-select': 'text', '-ms-user-select': 'text', 'user-select': 'text' }); }); searchInput.on('blur', function() { searchInput.css({ '-webkit-user-select': 'none', '-khtml-user-select': 'none', '-moz-user-select': 'none', '-ms-user-select': 'none', 'user-select': 'none' }); }); });
 function showNotify(text = 'Notify text', title = 'Thông báo', status = 'success') {
     new Notify({
         status: status,
