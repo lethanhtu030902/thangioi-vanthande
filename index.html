@@ -63,7 +63,7 @@
                 <button id="showNumberButton" class="btn-tg-point">Kiểm tra tu vi</button>
                 <div id="message" class="message mt-3 text-center"></div>
             </div> -->
-            <div class="container mt-5">
+           <div class="container mt-5">
                 <div class="tg-sect-search mb-4">
                     <label for="searchInput" class="form-label fw-bold">Pháp bảo vấn đáp:</label>
                     <input type="text" id="searchInput" class="form-control mb-3" placeholder="Nhập từ khóa để tìm...">
@@ -83,8 +83,9 @@
                 </div>
                 <script>
                     let originalData = [];
-                    let clearInputTimeout;            
-              
+                    let clearInputTimeout;
+            
+                    // Fetch dữ liệu từ file JSON
                     fetch('assets/data.json')
                         .then(response => response.json())
                         .then(data => {
@@ -97,22 +98,30 @@
                     function displayData(data) {
                         const qaList = document.getElementById('qa-list');
                         qaList.innerHTML = '';
-                        data.forEach((item, index) => {
-                            const row = document.createElement('tr');
-                            row.innerHTML = `
-                                <th scope="row" class="th-numb text-center">${index + 1}</th>
-                                <td class="th-question">${item.question}</td>
-                                <td class="th-answer">${item.answer}</td>
+            
+                        if (data.length === 0) {
+                            // Hiển thị thông báo nếu không có kết quả
+                            const noResultRow = document.createElement('tr');
+                            noResultRow.innerHTML = `
+                                <td colspan="3" class="text-center text-danger">Không tìm thấy kết quả</td>
                             `;
-                            qaList.appendChild(row);
-                        });
+                            qaList.appendChild(noResultRow);
+                        } else {
+                            data.forEach((item, index) => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `
+                                    <th scope="row" class="th-numb text-center">${index + 1}</th>
+                                    <td class="th-question">${item.question}</td>
+                                    <td class="th-answer">${item.answer}</td>
+                                `;
+                                qaList.appendChild(row);
+                            });
+                        }
                     }
             
-                
-                    document.getElementById('searchInput').addEventListener('input', function() {
+                    // Lắng nghe sự kiện input và xử lý tìm kiếm
+                    document.getElementById('searchInput').addEventListener('input', function () {
                         const keyword = this.value.toLowerCase();
-            
-                     
                         clearTimeout(clearInputTimeout);
             
                         const filteredData = originalData.filter(item =>
@@ -120,13 +129,23 @@
                         );
                         displayData(filteredData);
             
-                     
+                        // Xóa nội dung sau 10 giây và reset dữ liệu
                         clearInputTimeout = setTimeout(() => {
                             this.value = '';
-                        }, 6000);
+                            displayData(originalData);
+                        }, 10000);
+                    });
+            
+                    // Reset dữ liệu khi vừa load trang
+                    window.addEventListener('load', () => {
+                        const searchInput = document.getElementById('searchInput');
+                        searchInput.value = '';
+                        displayData(originalData);
                     });
                 </script>
             </div>
+
+
             <h3 class="copyright text-center mt-5">
                 &copy; Copyright Thần Giới. Created by Vân Thần Đế
             </h3>
