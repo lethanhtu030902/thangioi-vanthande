@@ -25,13 +25,9 @@ tbody{font-size:15px;font-weight:normal;}
 .btn-tg-point{display:block;font-weight:bold;background-position:center;background:url(https://hoathinh3d.sh/wp-content/themes/halimmovies-child/pages/assets/image/tong-mon-title.gif);background-size:auto;width:180px;padding:12px;font-size:1.2rem;text-transform:capitalize;color:#fff;border:none;border-radius:5px;margin:auto;cursor:pointer;transition:background-color 0.3s ease;}
 .tg-question-and-answer-empty{color:red;font-size:16px;font-weight:bold;}
 */
-.avatar-container {
-    max-width: 50px !important;
-}.avatar-container {
-    position: relative;
-    z-index: 0;
-    border-radius: 50%;
-}
+.avatar-container{max-width:100px !important;}
+.avatar-container{position:relative;z-index:0;border-radius:50%;}
+.khung_top_1_bxh::after{content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background:url( /wp-content/themes/halimmovies-child/assets/image/khung_top_1_bxh.png) no-repeat center center !important;background-size:cover !important;border-color:unset !important;}
 .wrap-content{margin:auto;max-width:1200px;padding-left:15px;padding-right:15px;}
 .th-numb{width:5%;}
 .th-question{width:70%;}
