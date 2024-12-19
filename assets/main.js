@@ -44,54 +44,5 @@ $(document).ready(function () {
 			e.preventDefault();
 		}
 	});
-});
-PeShiner = function () {
-	jQuery.browser = {};
-	(function () {
-		jQuery.browser.msie = false;
-		jQuery.browser.version = 0;
-		if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-			jQuery.browser.msie = true;
-			jQuery.browser.version = RegExp.$1;
-		}
-	})();
-	$(window).bind("load", function () {
-		$(".peShiner").each(function () {
-			var api = $(this).peShiner({
-				api: true,
-				paused: true,
-				reverse: true,
-				repeat: 1,
-				color: "blueTG",
-			});
-			api.resume();
-		});
-	});
+}); 
 
-};
-// $(document).ready(function() {
-//     $('#numberInput').on('input', function() {
-//         const numberInput = $(this);
-//         const number = parseFloat(numberInput.val());
-
-//         if (isNaN(number) || number <= 0) {
-//             setTimeout(() => {
-//                 numberInput.val('');
-//             }, 1000);
-//         }
-//     });
-
-//     $('#showNumberButton').on('click', function() {
-//         const numberInput = $('#numberInput');
-//         const messageElement = $('#message');
-//         const number = parseFloat(numberInput.val());
-//         if (!isNaN(number) && number > 0) {
-//             messageElement.text('Xin chúc mừng tu vi của bạn là: ' + number);
-//         } else {
-//             messageElement.text('Vui lòng nhập tu vi hợp lệ!');
-//         }
-//     });
-// });
-$(document).ready(function () {
-	PeShiner();
-});
