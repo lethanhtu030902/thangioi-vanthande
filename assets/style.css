@@ -30,14 +30,14 @@ tbody{font-size:15px;font-weight:normal;}
 .scrollToTop::before{position:absolute;font-family:"Font Awesome 6 Pro";content:"\f102";text-align:center;line-height:50px;font-size:20px;color:#3a7dc1;left:0;top:0;height:50px;width:50px;cursor:pointer;display:block;z-index:1;-webkit-transition:all 400ms linear;-o-transition:all 400ms linear;transition:all 400ms linear}
 .scrollToTop svg path{fill:none}
 .scrollToTop svg.progress-circle path{stroke:#3a7dc1;stroke-width:4;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:all 400ms linear;-o-transition:all 400ms linear;transition:all 400ms linear}
-@font-face{font-family:'UVN Hai Ba Trung';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/image/UVNHaiBaTrung.TTF') format('truetype');}
-@font-face{font-family:'MonarchDisplay';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/MonarchDisplay.otf') format('truetype');}
-@font-face{font-family:'SVN Karasha';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/SVN-Karasha.otf') format('truetype');}
-@font-face{font-family:'DVN-Notch';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/DVN-Notch.ttf') format('truetype');}
-@font-face{font-family:'SVN-Bougher';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/SVN-Bougher.otf') format('truetype');}
-@font-face{font-family:'DFVNGoatskinBrush';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/DFVNGoatskinBrush.otf') format('truetype');}
-@font-face{font-family:'thien_than';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/thien_than.ttf') format('truetype');}
-@font-face{font-family:'chan_tien_pntt';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/chan_tien_pntt.ttf') format('truetype');}
-@font-face{font-family:'chan_than';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/chan_than.ttf') format('truetype');}
-@font-face{font-family:'phong_hao_dau_la';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/phong_hao_dau_la.otf') format('truetype');}
-@font-face{font-family:'dau_de';src:url('https://hoathinh3d.love//wp-content/themes/halimmovies-child/assets/fonts/dau_de.ttf') format('truetype');}
+@font-face{font-family:'UVN Hai Ba Trung';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/image/UVNHaiBaTrung.TTF') format('truetype');}
+@font-face{font-family:'MonarchDisplay';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/MonarchDisplay.otf') format('truetype');}
+@font-face{font-family:'SVN Karasha';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/SVN-Karasha.otf') format('truetype');}
+@font-face{font-family:'DVN-Notch';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/DVN-Notch.ttf') format('truetype');}
+@font-face{font-family:'SVN-Bougher';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/SVN-Bougher.otf') format('truetype');}
+@font-face{font-family:'DFVNGoatskinBrush';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/DFVNGoatskinBrush.otf') format('truetype');}
+@font-face{font-family:'thien_than';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/thien_than.ttf') format('truetype');}
+@font-face{font-family:'chan_tien_pntt';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/chan_tien_pntt.ttf') format('truetype');}
+@font-face{font-family:'chan_than';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/chan_than.ttf') format('truetype');}
+@font-face{font-family:'phong_hao_dau_la';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/phong_hao_dau_la.otf') format('truetype');}
+@font-face{font-family:'dau_de';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/dau_de.ttf') format('truetype');}
