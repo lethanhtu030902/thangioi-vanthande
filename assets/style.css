@@ -1,15 +1,15 @@
 @font-face{font-family:'DFVN Goatskin Brush';src:url('DFVNGoatskinBrush-Regular.woff2') format('woff2'),url('DFVNGoatskinBrush-Regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap;}
-@font-face{font-family:'UVN Hai Ba Trung';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/image/UVNHaiBaTrung.TTF') format('truetype');}
-@font-face{font-family:'MonarchDisplay';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/MonarchDisplay.otf') format('truetype');}
-@font-face{font-family:'SVN Karasha';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/SVN-Karasha.otf') format('truetype');}
-@font-face{font-family:'DVN-Notch';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/DVN-Notch.ttf') format('truetype');}
-@font-face{font-family:'SVN-Bougher';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/SVN-Bougher.otf') format('truetype');}
-@font-face{font-family:'DFVNGoatskinBrush';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/DFVNGoatskinBrush.otf') format('truetype');}
-@font-face{font-family:'thien_than';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/thien_than.ttf') format('truetype');}
-@font-face{font-family:'chan_tien_pntt';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/chan_tien_pntt.ttf') format('truetype');}
-@font-face{font-family:'chan_than';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/chan_than.ttf') format('truetype');}
-@font-face{font-family:'phong_hao_dau_la';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/phong_hao_dau_la.otf') format('truetype');}
-@font-face{font-family:'dau_de';src:url('https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/fonts/dau_de.ttf') format('truetype');}
+@font-face{font-family:'UVN Hai Ba Trung';src:url('UVNHaiBaTrung.TTF') format('truetype');}
+@font-face{font-family:'MonarchDisplay';src:url('MonarchDisplay.otf') format('truetype');}
+@font-face{font-family:'SVN Karasha';src:url('SVN-Karasha.otf') format('truetype');}
+@font-face{font-family:'DVN-Notch';src:url('DVN-Notch.ttf') format('truetype');}
+@font-face{font-family:'SVN-Bougher';src:url('SVN-Bougher.otf') format('truetype');}
+@font-face{font-family:'DFVNGoatskinBrush';src:url('DFVNGoatskinBrush.otf') format('truetype');}
+@font-face{font-family:'thien_than';src:url('thien_than.ttf') format('truetype');}
+@font-face{font-family:'chan_tien_pntt';src:url('chan_tien_pntt.ttf') format('truetype');}
+@font-face{font-family:'chan_than';src:url('chan_than.ttf') format('truetype');}
+@font-face{font-family:'phong_hao_dau_la';src:url('phong_hao_dau_la.otf') format('truetype');}
+@font-face{font-family:'dau_de';src:url('dau_de.ttf') format('truetype');}
 body{background-color:#f4f4f9;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-size:15px;color:#000;margin:0;padding:0;width:100%;overflow-x:hidden;-moz-user-select:none !important;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 body::-webkit-scrollbar{width:5px;}
 body::-webkit-scrollbar-track{background:#ccc;}
@@ -27,7 +27,7 @@ tbody{font-size:15px;font-weight:normal;}
 */
 .avatar-container{max-width:100px !important;}
 .avatar-container{position:relative;z-index:0;border-radius:50%;}
-.khung_top_1_bxh::after{content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background:url(https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/image/khung_top_1_bxh.png) no-repeat center center !important;background-size:cover !important;border-color:unset !important;}
+.khung_top_1_bxh::after{content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background:url( /wp-content/themes/halimmovies-child/assets/image/khung_top_1_bxh.png) no-repeat center center !important;background-size:cover !important;border-color:unset !important;}
 .wrap-content{margin:auto;max-width:1200px;padding-left:15px;padding-right:15px;}
 .th-numb{width:5%;}
 .th-question{width:70%;}
