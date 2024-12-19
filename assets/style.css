@@ -27,7 +27,7 @@ tbody{font-size:15px;font-weight:normal;}
 */
 .avatar-container{max-width:100px !important;}
 .avatar-container{position:relative;z-index:0;border-radius:50%;}
-.khung_top_1_bxh::after{content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background:url( /wp-content/themes/halimmovies-child/assets/image/khung_top_1_bxh.png) no-repeat center center !important;background-size:cover !important;border-color:unset !important;}
+.khung_top_1_bxh::after{content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background:url(https://hoathinh3d.love/wp-content/themes/halimmovies-child/assets/image/khung_top_1_bxh.png) no-repeat center center !important;background-size:cover !important;border-color:unset !important;}
 .wrap-content{margin:auto;max-width:1200px;padding-left:15px;padding-right:15px;}
 .th-numb{width:5%;}
 .th-question{width:70%;}
