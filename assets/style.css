@@ -16,7 +16,7 @@ body::-webkit-scrollbar-track{background:#ccc;}
 body::-webkit-scrollbar-thumb{background:#3a7dc1;}
 body::-webkit-scrollbar-thumb:hover{background:#3a7dc1;}
 input[type="text"]{-webkit-user-select:text !important;-khtml-user-select:text !important;-moz-user-select:text !important;-ms-user-select:text !important;user-select:text !important;}
-.wrap-content{margin:auto;max-width:1200px;padding-left:15px;padding-right:15px;}
+.wrap-content{margin:auto;max-width:1200px;width: 100%; padding-left:15px;padding-right:15px;}
 thead{ background:#3a7dc1; font-size:16px; border-radius:5px 5px 0px 5px; -webkit-border-radius:5px 5px 0px 5px; -moz-border-radius:5px 5px 0px 5px; -ms-border-radius:5px 5px 0px 5px; -o-border-radius:5px 5px 0px 5px; }
 tbody{font-size:15px;font-weight:normal;}
 .th-numb{width:5%;}
