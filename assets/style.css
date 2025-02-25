@@ -11,7 +11,7 @@
 @font-face{font-family:'dau_de';src:url('dau_de.ttf') format('truetype');}
 @font-face{font-family:'tinh_niet';src:url('tinh-niet-3-fx.otf') format('truetype');}
 body{background-color:#f4f4f9;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-size:15px;color:#000;margin:0;padding:0;width:100%;overflow-x:hidden;-moz-user-select:none !important;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
-body::-webkit-scrollbar{width:10px;}
+body::-webkit-scrollbar{width:6px;}
 body::-webkit-scrollbar-track{background:#ccc;}
 body::-webkit-scrollbar-thumb{background:#3a7dc1;}
 body::-webkit-scrollbar-thumb:hover{background:#3a7dc1;}
