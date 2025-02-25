@@ -67,7 +67,7 @@
                     let originalData = [];
                     let clearInputTimeout;
                     let fuse;
-
+                
                     fetch('assets/data.json')
                         .then(response => response.json())
                         .then(data => {
@@ -80,7 +80,7 @@
                             displayData(originalData);
                         })
                         .catch(error => console.error('Lỗi khi lấy dữ liệu:', error));
-
+                
                     function displayData(data) {
                         const qaList = document.getElementById('qa-list');
                         qaList.innerHTML = '';
@@ -100,29 +100,35 @@
                             });
                         }
                     }
-
+                
                     document.getElementById('searchInput').addEventListener('input', function() {
-                        const keyword = this.value.trim();
+                        const keyword = this.value.trim().toLowerCase();
                         clearTimeout(clearInputTimeout);
-
+                
                         if (keyword.length === 0) {
                             displayData(originalData);
                         } else {
-                            const results = fuse.search(keyword).map(result => result.item);
-                            displayData(results);
+                            const exactMatch = originalData.find(item => item.question.toLowerCase() === keyword);
+                
+                            if (exactMatch) {
+                                displayData([exactMatch]);  
+                            } else {
+                                const results = fuse.search(keyword).map(result => result.item);
+                                displayData(results);
+                            }
                         }
-
+                
                         clearInputTimeout = setTimeout(() => {
                             this.value = '';
                             displayData(originalData);
                         }, 15000);
                     });
-
+                
                     window.addEventListener('load', () => {
                         document.getElementById('searchInput').value = '';
                         displayData(originalData);
                     });
-                </script>
+                </script>               
             </div>
             <h3 class="copyright text-center mt-5 color_phong_hao_dau_la_91_cap ">
               Vân Thần Giới Chi Bảo
