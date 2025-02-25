@@ -14,6 +14,7 @@
         href="https://hoathinh3d.live/wp-content/themes/halimmovies-child/pages/assets/css/ranks.css">
     <link rel="stylesheet" href="https://hoathinh3d.live/wp-content/themes/halimmovies-child/assets/css/khungava.css">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -66,10 +67,17 @@
                 <script>
                     let originalData = [];
                     let clearInputTimeout;
+                    let fuse;
+
                     fetch('assets/data.json')
                         .then(response => response.json())
                         .then(data => {
                             originalData = data;
+                            fuse = new Fuse(data, {
+                                keys: ['question', 'answer'], 
+                                includeScore: true,
+                                threshold: 0.4  
+                            });
                             displayData(originalData);
                         })
                         .catch(error => console.error('Lỗi khi lấy dữ liệu:', error));
@@ -79,37 +87,40 @@
                         qaList.innerHTML = '';
                         if (data.length === 0) {
                             const noResultRow = document.createElement('tr');
-                            noResultRow.innerHTML = `
-                                   <td colspan="3" class="text-center text-danger">Không tìm thấy kết quả</td>
-                               `;
+                            noResultRow.innerHTML = `<td colspan="3" class="text-center text-danger">Không tìm thấy kết quả</td>`;
                             qaList.appendChild(noResultRow);
                         } else {
                             data.forEach((item, index) => {
                                 const row = document.createElement('tr');
                                 row.innerHTML = `
-                                       <th scope="row" class="th-numb text-center">${index + 1}</th>
-                                       <td class="th-question">${item.question}</td>
-                                       <td class="th-answer">${item.answer}</td>
-                                   `;
+                                    <th scope="row" class="th-numb text-center">${index + 1}</th>
+                                    <td class="th-question">${item.question}</td>
+                                    <td class="th-answer">${item.answer}</td>
+                                `;
                                 qaList.appendChild(row);
                             });
                         }
                     }
+
                     document.getElementById('searchInput').addEventListener('input', function() {
-                        const keyword = this.value.toLowerCase();
+                        const keyword = this.value.trim();
                         clearTimeout(clearInputTimeout);
-                        const filteredData = originalData.filter(item =>
-                            item.question.toLowerCase().includes(keyword) || item.answer.toLowerCase().includes(keyword)
-                        );
-                        displayData(filteredData);
+
+                        if (keyword.length === 0) {
+                            displayData(originalData);
+                        } else {
+                            const results = fuse.search(keyword).map(result => result.item);
+                            displayData(results);
+                        }
+
                         clearInputTimeout = setTimeout(() => {
                             this.value = '';
                             displayData(originalData);
                         }, 10000);
                     });
+
                     window.addEventListener('load', () => {
-                        const searchInput = document.getElementById('searchInput');
-                        searchInput.value = '';
+                        document.getElementById('searchInput').value = '';
                         displayData(originalData);
                     });
                 </script>
