@@ -21,6 +21,7 @@ input[type="text"]{-webkit-user-select:text !important;-khtml-user-select:text !
 thead{background:#3a7dc1;font-size:16px;border-radius:5px 5px 0px 5px;-webkit-border-radius:5px 5px 0px 5px;-moz-border-radius:5px 5px 0px 5px;-ms-border-radius:5px 5px 0px 5px;-o-border-radius:5px 5px 0px 5px;}
 tbody{font-size:15px;font-weight:normal;}
 .highlight{background:yellow !important;font-weight:bold;animation:blink 1s infinite;}
+@keyframes blink { 50% { opacity: 0.5; } }
 .btn-mirror{background:yellow !important;border:solid 1px yellow !important;}
 .th-numb{width:5%;}
 .th-question{width:70%;}
