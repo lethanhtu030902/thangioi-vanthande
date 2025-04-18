@@ -41,6 +41,7 @@ tbody{font-size:15px;font-weight:normal;}
 .khung_vip_4::after{border-radius:100% !important;pointer-events:none;content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background-size:cover !important;border-color:unset !important;}
 .khung_vip_2::after{border-radius:100% !important;pointer-events:none;content:'' !important;position:absolute !important;top:-50% !important;left:-50% !important;width:200px !important;height:200px !important;transform:translate(1%,1%);background-size:cover !important;border-color:unset !important;}
 .rounded-circle{border-radius:50%!important;user-select:none;pointer-events:none;}
+.scrollToTop{width:50px;height:50px;text-align:center;font-weight:bold;color:#444;text-decoration:none;position:fixed;bottom:65px;right:35px;display:none;z-index:10000;cursor:pointer;}
 @media (max-width:600px){.wrap-content{max-width:100% !important;padding-left:20px !important;padding-right:20px !important;}
 .tg-sect-slogan,.tg-sect-search .form-label{font-size:30px !important;padding:0px !important;}
 .tg-sect-name,.btn-vtd{font-size:18px !important;}
