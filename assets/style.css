@@ -24,6 +24,7 @@ tbody{font-size:15px;font-weight:normal;}
 @keyframes blink{50%{opacity:0.5;}
 }
 .btn-mirror{background: #3a7dc1 !important; color:#fff;}
+.btn-mirror-click{color:yellow;font-weight:bold;}
 .th-numb{width:5%;}
 .th-question{width:70%;}
 .th-answer{width:25%;}
